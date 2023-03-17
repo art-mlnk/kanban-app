@@ -1,0 +1,14 @@
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+	.cards {
+	  flex-direction: column;
+	}
+
+	.list {
+		width: auto;
+	}
+  }

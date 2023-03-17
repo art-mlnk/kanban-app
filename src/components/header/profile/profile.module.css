@@ -1,0 +1,64 @@
+.profile {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.user_avatar {
+  padding-right: 6px;
+  cursor: pointer;
+}
+
+.arrow.up {
+  transform: scaleY(-1);
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: fixed;
+  top: 48px;
+  right: 16px;
+  min-width: 120px;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 4px;
+  padding: 8px 12px;
+  z-index: 2;
+}
+
+.menu_button {
+  padding: 10px 80px 10px 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  font-family: "Roboto";
+  font-size: 14px;
+  line-height: 16px;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu:after {
+  border: 10px solid transparent;
+  border-bottom-color: #fff;
+  position: absolute;
+  bottom: 100%;
+  right: 18px;
+  content: "";
+}
+
+.menu_button:hover {
+  text-decoration-line: underline;
+  text-decoration-color: #0079bf;
+}
+
+@media screen and (max-width: 430px) {
+  .menu {
+    position: absolute;
+    min-width: 150px;
+    align-items: flex-start;
+  }
+}

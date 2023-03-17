@@ -1,0 +1,27 @@
+.header {
+	background-color: #0067A3;
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+	padding: 0 20px;
+	align-items: center;
+	flex: 0;
+	height: 55px;
+  }
+  
+.title {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 32.91px;
+	color: #ffffff;
+  }
+
+  @media screen and (max-width: 430px) {
+	.title {
+		display: none;
+	}
+	.header {
+		justify-content: flex-end;
+	  }
+}
